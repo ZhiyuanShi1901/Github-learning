@@ -16,6 +16,7 @@
    
 #### 4. 向暂存区中添加文件
     git add (文件名)
+    git add . (将所有文件添加到暂存区)
     
 #### 5. 提交保存信息
     git commit -m "描述信息"
@@ -75,6 +76,7 @@
     git clone (SSH)  //将网络仓库克隆到本地
     git checkout -b (本地新建分支名) origin/(远程分支名)  //将远程仓库的分支克隆
     git push  //直接推送处于该情况下的分支
+    
 #### 2. 获取最新的远程仓库分支
     git pull origin (分支名)
     
