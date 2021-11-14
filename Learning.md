@@ -81,3 +81,23 @@
     git pull origin (分支名)
     
     
+### Use Pull Request
+#### 1. [WIP] means Work in progress 正在开发中
+
+#### 2. 保持本地fork仓库的最新状态
+    cd (本地仓库路径)
+    git remote add (原仓库新名称) (原仓库SSH)
+    git fetch (原仓库新名称)       //获取最新数据
+    git merge (原仓库新名称)/master   //合并
+#### 3. 接收Pull Request
+    git remote add PR发送者 (发送者远程仓库SSH) 
+    git fetch PR发送者    //将发送方仓库设置为本地仓库的远程仓库
+    git checkout -b pr1  //创建用于检查的分支
+    git merge PR发送者/workname   //合并分支
+    git branch -D pr1   //删除分支
+    
+#### 4. 采纳
+    git checkout (主分支名)
+    git merge PR发送者/work
+    git diff origin/(主分支名)
+    git push     //推送
